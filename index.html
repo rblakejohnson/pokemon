@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Pokemon API App</title>
+  </head>
+  <body>
+    <h1>Pokemon Lookup</h1>
+
+    <!-- Search Form -->
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="pokemon-name"
+        placeholder="e.g. pikachu, ditto..."
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Container where dynamically generated innerHTML will be rendered -->
+    <div id="pokemon-container">
+      <p>Search for a Pokemon above!</p>
+    </div>
+
+    <!-- Vite module entry script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
